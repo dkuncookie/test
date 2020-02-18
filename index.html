@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap之字体图标的使用</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min-v.3.3.7.css">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            display:flex;
+        }
+        ul li{
+            width:40px;
+            height:40px;
+            border:1px solid gray;
+            margin-right: 10px;
+        }
+        ul li span{
+            text-align: center;
+        }
+        .icon{
+            font-size:28px;
+            color:red;
+            margin-left:3px;
+            margin-top:3px;
+        }
+        button{
+            width:80px;
+            height:30px;
+            border: 1px solid gray;
+            border-radius:4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <!-- 图标的基本使用 -->
+            <ul>
+                <li>
+                    <span class="icon glyphicon glyphicon-search"></span>
+                    <span class="help-block">搜索</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-jpy"></span>
+                    <span class="help-block">钱包</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-earphone"></span>
+                    <span class="help-block">电话</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-credit-card"></span>
+                    <span class="help-block">卡</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-hdd"></span>
+                    <span class="help-block">空间</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-bell"></span>
+                    <span class="help-block">消息</span>
+                </li>
+                <li>
+                    <span class="icon glyphicon glyphicon-bullhorn"></span>
+                    <span class="help-block">广播</span>
+                </li>
+            </ul>
+            <hr/>
+            <!-- 在按钮中使用图标 -->
+            <div>
+                <button class="">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="sr-only">喜欢</span>
+                    喜欢
+                </button>
+            </div>
+            <br/>
+            <!-- 错误提示框 -->
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> 
+                <span class="sr-only">Error:</span>
+                Error:var loop not is defined
+            </div>
+            <div class="alert alert-warning">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> 
+                <span class="sr-only">Error:</span>
+                Error:var loop not is defined
+            </div>
+            <div class="alert alert-success">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> 
+                <span class="sr-only">Error:</span>
+                Error:var loop not is defined
+            </div>
+            <div class="alert alert-info">
+                <span class="glyphicon glyphicon-exclamation-sign"></span> 
+                <span class="sr-only">Error:</span>
+                Error:var loop not is defined
+            </div>
+        </div>
+    </div>
+</body>
+</html>
